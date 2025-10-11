@@ -1,0 +1,33 @@
+---
+type Props = {
+  emojis: string[];
+};
+
+const { emojis } = Astro.props;
+
+const CHANGE_TIME_INTERVAL = 1000;
+---
+
+<main class="grid place-items-center h-dvh text-center text-7xl">
+  <div>
+    <div id="emoji"></div>
+  </div>
+</main>
+
+<script is:inline define:vars={{ emojis, CHANGE_TIME_INTERVAL }}>
+  const emojiEl = document.getElementById("emoji");
+  let lastEmojiIndex = -1;
+
+  const showNext = () => {
+    let randomIndex;
+    do {
+      randomIndex = Math.floor(Math.random() * emojis.length);
+    } while (randomIndex === lastEmojiIndex && emojis.length > 1);
+
+    lastEmojiIndex = randomIndex;
+    emojiEl.textContent = emojis[randomIndex];
+  };
+
+  showNext();
+  setInterval(showNext, CHANGE_TIME_INTERVAL);
+</script>
