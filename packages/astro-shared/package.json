@@ -1,7 +1,7 @@
 {
   "name": "@repo/astro-shared",
-  "type": "module",
   "version": "0.0.1",
+  "type": "module",
   "exports": {
     "./tsconfig": "./tsconfig.json",
     "./astro.config": "./astro.config.mjs",
@@ -9,13 +9,14 @@
     "./layouts/*": "./src/layouts/*"
   },
   "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
     "check-types": "astro check"
   },
   "dependencies": {
     "@repo/tailwind": "workspace:*",
     "@tailwindcss/vite": "^4.1.14",
-    "astro": "^5.14.4",
-    "tailwindcss": "^4.1.14"
+    "astro": "catalog:",
+    "tailwindcss": "catalog:"
   },
   "devDependencies": {
     "@repo/ui": "workspace:*"
