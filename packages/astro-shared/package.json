@@ -14,11 +14,9 @@
   },
   "dependencies": {
     "@repo/tailwind": "workspace:*",
-    "@tailwindcss/vite": "^4.1.14",
+    "@tailwindcss/vite": "^4.3.1",
     "astro": "catalog:",
     "tailwindcss": "catalog:"
   },
-  "devDependencies": {
-    "@repo/ui": "workspace:*"
-  }
+  "devDependencies": {}
 }
