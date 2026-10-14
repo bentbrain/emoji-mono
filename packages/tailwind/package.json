@@ -10,7 +10,6 @@
     "clean": "git clean -xdf .cache .turbo node_modules"
   },
   "dependencies": {
-    "@tailwindcss/cli": "catalog:",
     "tailwindcss": "catalog:",
     "tw-animate-css": "catalog:"
   },

@@ -18,7 +18,7 @@ experiments so they can share the animation, layout, styling, and tooling.
 - `@repo/astro-shared` — shared Astro layout and bouncing-emoji animation
 - `@repo/tailwind` — shared Tailwind CSS theme
 - `@repo/typescript-config` — shared TypeScript configuration
-- `@repo/ui` — shared UI utilities and components
+- `@repo/ui` — shared UI utilities
 
 ## Stack
 
@@ -30,7 +30,7 @@ experiments so they can share the animation, layout, styling, and tooling.
 
 ## Local development
 
-Install the workspace dependencies:
+Use Node.js 22.12 or newer and Bun 1.3.14. Install the workspace dependencies:
 
 ```sh
 bun install
@@ -57,6 +57,8 @@ port to Hand Shake.
 ```sh
 bun run build
 bun run check-types
+bun run knip
+bun run test
 ```
 
 The sites are deliberately tiny: the animation runs in the browser, respects

@@ -10,14 +10,8 @@
     "clean": "git clean -xdf .cache .turbo node_modules"
   },
   "dependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
-    "@tailwindcss/cli": "catalog:",
-    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.545.0",
-    "tailwind-merge": "^3.3.1",
-    "tailwindcss": "catalog:",
-    "tw-animate-css": "catalog:"
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*"
